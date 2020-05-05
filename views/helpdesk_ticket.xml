@@ -22,7 +22,7 @@
                 <group name="main">
                     <group>
                         <field name="partner_id" />
-                        <field name="partner_name" string="Contacto" />
+                        <field name="partner_name" string="Contact" />
                         <field name="partner_email" />
                         <field name="partner_phone" />
                         <field name="project_id" />
@@ -50,6 +50,7 @@
                             <field name="name" />
                             <field name="unit_amount" widget="float_time" />
                         </tree>
+                        <!-- Form desplegable de las líneas del Timesheet-->
                         <form>
                             <group>
                               <group name="ticket" string="Ticket">
@@ -59,17 +60,18 @@
                                 <field name="user_id"/>
                                 <field name="name" />
                               </group>
-                              <group name="costs" string="Costes">
+                              <group name="costs" string="Costs">
                                 <field name="unit_amount" widget="float_time" />
                               </group>
                             </group>
                           </form>
                     </field>
                     <group class="oe_subtotal_footer oe_right">
-                        <field name="total_hours_ticket" widget="float_time" string="Horas Totales" readonly="1" />
+                        <field name="total_hours_ticket" widget="float_time" readonly="1" />
                     </group>
                 </page> 
             </xpath>
+            <!-- El campo channel_id pasa a la pestaña other_info-->
             <xpath expr="//field[@name='last_stage_update']" position="before">
                 <field name="channel_id"/>
             </xpath>
