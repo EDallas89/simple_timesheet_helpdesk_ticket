@@ -50,6 +50,20 @@
                             <field name="name" />
                             <field name="unit_amount" widget="float_time" />
                         </tree>
+                        <form>
+                            <group>
+                              <group name="ticket" string="Ticket">
+                                <field name="project_id"/>
+                                <field name="task_id" />
+                                <field name="date" />
+                                <field name="user_id"/>
+                                <field name="name" />
+                              </group>
+                              <group name="costs" string="Costes">
+                                <field name="unit_amount" widget="float_time" />
+                              </group>
+                            </group>
+                          </form>
                     </field>
                     <group class="oe_subtotal_footer oe_right">
                         <field name="total_hours_ticket" widget="float_time" string="Horas Totales" readonly="1" />
