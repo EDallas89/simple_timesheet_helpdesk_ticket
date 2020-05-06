@@ -3,6 +3,16 @@ from odoo import models, fields, api
 class TicketTimesheet(models.Model):
     _inherit = 'helpdesk.ticket'
 
+    partner_phone = fields.Char(
+        string='Contact Phone',
+        related='partner_id.mobile',
+        store=True,
+        readonly=False,
+    )
+    account_id = fields.Many2one(
+        comodel_name='account.analytic.account',
+        string='Analityc Account'
+    )
     project_id = fields.Many2one(
         comodel_name='project.project',
         string='Project',
@@ -16,15 +26,9 @@ class TicketTimesheet(models.Model):
         inverse_name='ticket_id',
         string='Timesheet',
     )
-    partner_phone = fields.Char(
-        string='Contact Phone',
-        related='partner_id.mobile',
-        store=True,
-        readonly=False,
-    )
 
     total_hours_ticket = fields.Float(
-        compute='impute_hours'
+        compute='impute_hours',
     )
 
     @api.depends('timesheet_ids.unit_amount')

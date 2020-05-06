@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0-20200121\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-05 09:15+0000\n"
-"PO-Revision-Date: 2020-05-05 09:15+0000\n"
+"POT-Creation-Date: 2020-05-06 10:43+0000\n"
+"PO-Revision-Date: 2020-05-06 10:43+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -16,9 +16,19 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: simple_timesheet_helpdesk_ticket
+#: model:ir.model.fields,field_description:simple_timesheet_helpdesk_ticket.field_helpdesk_ticket__account_id
+msgid "Analityc Account"
+msgstr "Cuenta Analítica"
+
+#. module: simple_timesheet_helpdesk_ticket
 #: model:ir.model,name:simple_timesheet_helpdesk_ticket.model_account_analytic_line
 msgid "Analytic Line"
 msgstr "Línea Analítica"
+
+#. module: simple_timesheet_helpdesk_ticket
+#: model_terms:ir.ui.view,arch_db:simple_timesheet_helpdesk_ticket.simple_timesheet_helpdesk_ticket_view_form
+msgid "Contact"
+msgstr "Contacto"
 
 #. module: simple_timesheet_helpdesk_ticket
 #: model:ir.model.fields,field_description:simple_timesheet_helpdesk_ticket.field_helpdesk_ticket__partner_phone
@@ -27,18 +37,23 @@ msgstr "Teléfono de Contacto"
 
 #. module: simple_timesheet_helpdesk_ticket
 #: model_terms:ir.ui.view,arch_db:simple_timesheet_helpdesk_ticket.simple_timesheet_helpdesk_ticket_view_form
-msgid "Contact"
-msgstr "Contacto"
+msgid "Costs"
+msgstr "Costes"
 
 #. module: simple_timesheet_helpdesk_ticket
 #: model_terms:ir.ui.view,arch_db:simple_timesheet_helpdesk_ticket.simple_timesheet_helpdesk_ticket_view_form
-msgid "Costs"
-msgstr "Costes"
+msgid "Duration (Hour(s))"
+msgstr "Duración (Hora(s)"
 
 #. module: simple_timesheet_helpdesk_ticket
 #: model:ir.model,name:simple_timesheet_helpdesk_ticket.model_helpdesk_ticket
 msgid "Helpdesk Ticket"
 msgstr "Ticket Helpdesk"
+
+#. module: simple_timesheet_helpdesk_ticket
+#: model_terms:ir.ui.view,arch_db:simple_timesheet_helpdesk_ticket.simple_timesheet_helpdesk_ticket_view_form
+msgid "Hours Spent"
+msgstr "Horas Dedicadas"
 
 #. module: simple_timesheet_helpdesk_ticket
 #: model:ir.model.fields,field_description:simple_timesheet_helpdesk_ticket.field_helpdesk_ticket__project_id
@@ -63,15 +78,9 @@ msgstr ""
 #. module: simple_timesheet_helpdesk_ticket
 #: model_terms:ir.ui.view,arch_db:simple_timesheet_helpdesk_ticket.simple_timesheet_helpdesk_ticket_view_form
 msgid "Timesheets"
-msgstr "Partes de Horas"
-
-#. module: simple_timesheet_helpdesk_ticket
-#: model:ir.model.fields,field_description:simple_timesheet_helpdesk_ticket.field_helpdesk_ticket__total_hours_ticket
-msgid "Total Hours Ticket"
-msgstr "Horas Totales"
+msgstr "Partes de horas"
 
 #. module: simple_timesheet_helpdesk_ticket
 #: model:ir.model.fields,field_description:simple_timesheet_helpdesk_ticket.field_account_analytic_line__ticket_id
 msgid "ticket_id"
 msgstr ""
-

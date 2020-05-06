@@ -7,7 +7,7 @@
     'website': "https://github.com/EDallas89",
     'category': 'After-Sales',
     'version': '12.0',
-    'depends': ['helpdesk_mgmt', 'account', 'project', 'hr_timesheet'],
+    'depends': ['helpdesk_mgmt', 'account', 'project','hr_timesheet'],
     'data': [
         #'security/ir.model.access.csv',
         'views/helpdesk_ticket.xml',
