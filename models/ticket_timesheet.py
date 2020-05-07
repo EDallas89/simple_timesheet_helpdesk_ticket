@@ -17,6 +17,7 @@ class TicketTimesheet(models.Model):
         comodel_name='project.project',
         string='Project',
     )
+
     task_id = fields.Many2one(
         comodel_name='project.task',
         string='Task',
@@ -39,4 +40,3 @@ class TicketTimesheet(models.Model):
     @api.onchange('project_id')
     def _onchange_project(self):
         self.task_id = False
-       # self.timesheet_ids = self.project_id.id
