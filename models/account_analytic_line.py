@@ -21,4 +21,5 @@ class AccountAnalyticLine(models.Model):
         comodel_name='account.analytic.account',
         string='Analityc Account',
         related='ticket_id.account_id',
+        store="True",
     )
